@@ -61,10 +61,9 @@ public class MCreateAccount_dao {
             
             String decryptPW = sec.decry(encryptPW);
             
-            List<String> sendMessage = new ArrayList<>();
-            sendMessage.add(recivedMessages.get(4));
-            sendMessage.add(encryptPW);
-            sendMessage.add(decryptPW);
+            sendMessages.add(recivedMessages.get(4));
+            sendMessages.add(encryptPW);
+            sendMessages.add(decryptPW);
             
             return sendMessages;
             
